@@ -4,7 +4,8 @@
   "description": "Figure out license you're using",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "readme": "readme package.json --tests --travis > README.md"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/watilde/licenselint",
   "dependencies": {
     "read-package-json": "^1.3.3"
+  },
+  "devDependencies": {
+    "package-json-to-readme": "^1.4.1"
   }
 }
