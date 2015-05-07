@@ -26,6 +26,11 @@ npm test
     "name": "read-package-json",
     "license": "ISC",
     "version": "1.3.3"
+  },
+  {
+    "name": "commander",
+    "license": "MIT",
+    "version": "2.8.1"
   }
 ]
 
@@ -33,6 +38,7 @@ npm test
 
 ## Dependencies
 
+- [commander](https://github.com/tj/commander.js): the complete solution for node.js command-line programs
 - [read-package-json](https://github.com/isaacs/read-package-json): The thing npm uses to read package.json files with semantics and defaults and validation
 
 ## Dev Dependencies

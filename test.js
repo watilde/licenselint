@@ -1,5 +1,18 @@
 var licenselint = require("./lib")
+var fixture = JSON.stringify([
+  {
+    "name": "read-package-json",
+    "license": "ISC",
+    "version": "1.3.3"
+  },
+  {
+    "name": "commander",
+    "license": "MIT",
+    "version": "2.8.1"
+  }
+], 2, 2)
+
 
 licenselint(process.cwd(), {version: true}, function (data) {
-  console.log(JSON.stringify(data, 2, 2))
+  if (fixture !== JSON.stringify(data, 2, 2)) throw new Error("Error")
 })
